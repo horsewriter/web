@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Copywriting - HorseWriter</title>
+    <meta name="description" content="Servicio profesional de email copywriting. Campañas persuasivas que convierten prospectos en clientes leales.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'serif': ['Noto Serif', 'serif'],
+                    },
+                    colors: {
+                        'navy': '#1e3a8a',
+                        'sand': '#f5f5dc',
+                        'charcoal': '#374151',
+                        'slate': '#6b7280',
+                    }
+                }
+            },
+            darkMode: 'class'
+        }
+    </script>
+</head>
+<body class="font-serif text-gray-900 bg-white dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="font-inter font-bold text-2xl text-navy dark:text-white">
+                    HorseWriter
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html#servicios" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Servicios</a>
+                    <a href="index.html#precios" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Precios</a>
+                    <a href="index.html#contacto" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Contacto</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+                        <svg id="sun-icon" class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                        </svg>
+                        <svg id="moon-icon" class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-700">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="index.html#servicios" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Servicios</a>
+                    <a href="index.html#precios" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Precios</a>
+                    <a href="index.html#contacto" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Contacto</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6 bg-gradient-to-br from-sand/20 to-white dark:from-gray-800 dark:to-gray-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-inter font-bold text-4xl md:text-6xl leading-tight mb-6 text-gray-900 dark:text-white">
+                Email <span class="text-navy dark:text-blue-400">Copywriting</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate dark:text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+                Convierte prospectos en clientes con emails que realmente persuaden
+            </p>
+            <div class="w-24 h-px bg-navy dark:bg-blue-400 mx-auto"></div>
+        </div>
+    </section>
+
+    <!-- Service Image -->
+    <section class="py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="rounded-lg overflow-hidden shadow-xl">
+                <img src="images/email-marketing.jpg" alt="Email Copywriting Service" class="w-full h-64 md:h-96 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="py-16 px-6 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-inter font-bold text-3xl text-gray-900 dark:text-white mb-6">
+                        Emails que convierten y generan resultados
+                    </h2>
+                    <p class="text-lg text-slate dark:text-gray-300 leading-relaxed mb-6">
+                        Nuestro servicio de Email Copywriting combina psicología del consumidor con tu voz auténtica 
+                        para crear campañas que se sienten personales y persuasivas. Cada email está diseñado para 
+                        mover a tu audiencia a través del embudo de ventas de manera natural y efectiva.
+                    </p>
+                    <p class="text-lg text-slate dark:text-gray-300 leading-relaxed">
+                        Desde secuencias de bienvenida hasta campañas de lanzamiento, creamos contenido que 
+                        construye relaciones y genera ingresos medibles para tu negocio.
+                    </p>
+                </div>
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <h3 class="font-inter font-bold text-xl text-gray-900 dark:text-white mb-4">
+                        Tipos de email incluidos
+                    </h3>
+                    <ul class="space-y-3 text-slate dark:text-gray-300">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-navy dark:text-blue-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Secuencias de bienvenida automatizadas
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-navy dark:text-blue-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Campañas de lanzamiento de productos
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-navy dark:text-blue-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Emails de nurturing y educación
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-navy dark:text-blue-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Promociones y ofertas especiales
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-navy dark:text-blue-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Emails de reactivación y win-back
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-navy dark:text-blue-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Subject lines optimizados para apertura
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-inter font-bold text-3xl text-center text-gray-900 dark:text-white mb-12">
+                Resultados que Importan
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                    <div class="text-4xl font-bold text-navy dark:text-blue-400 mb-2">25%+</div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Tasa de Apertura</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Promedio de apertura superior al estándar de la industria.</p>
+                </div>
+                <div class="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                    <div class="text-4xl font-bold text-navy dark:text-blue-400 mb-2">8%+</div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Click-Through Rate</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">CTR optimizado para máxima conversión.</p>
+                </div>
+                <div class="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                    <div class="text-4xl font-bold text-navy dark:text-blue-400 mb-2">3x</div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">ROI Promedio</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Retorno de inversión comprobado en campañas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 px-6 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-inter font-bold text-3xl text-center text-gray-900 dark:text-white mb-12">
+                Nuestro Proceso de Email Marketing
+            </h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white dark:text-gray-900 font-bold text-xl">1</span>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Análisis de Audiencia</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Estudiamos a tu audiencia y sus puntos de dolor específicos.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white dark:text-gray-900 font-bold text-xl">2</span>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Estrategia de Secuencia</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Diseñamos el flujo de emails para máxima conversión.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white dark:text-gray-900 font-bold text-xl">3</span>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Copywriting Persuasivo</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Creamos cada email con técnicas de persuasión probadas.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white dark:text-gray-900 font-bold text-xl">4</span>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Optimización</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Refinamos basado en métricas y feedback para mejorar resultados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-6 bg-navy dark:bg-blue-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-inter font-bold text-3xl text-white mb-6">
+                ¿Listo para emails que realmente convierten?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                Comienza a generar más ventas con campañas de email que tu audiencia realmente quiere leer.
+            </p>
+            <button class="bg-white hover:bg-gray-100 text-navy px-8 py-4 rounded-lg font-inter font-semibold transition-colors duration-200">
+                Solicitar Email Copywriting
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="font-inter font-bold text-2xl mb-4">HorseWriter</div>
+            <p class="text-gray-400 mb-8">Servicios premium de ghostwriting discretos y profesionales.</p>
+            <div class="w-24 h-px bg-gray-700 mx-auto"></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

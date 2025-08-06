@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Artículos - HorseWriter</title>
+    <meta name="description" content="Servicio profesional de ghostwriting para blogs y artículos. Contenido profundo que educa, informa y establece experiencia.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'serif': ['Noto Serif', 'serif'],
+                    },
+                    colors: {
+                        'navy': '#1e3a8a',
+                        'sand': '#f5f5dc',
+                        'charcoal': '#374151',
+                        'slate': '#6b7280',
+                    }
+                }
+            },
+            darkMode: 'class'
+        }
+    </script>
+</head>
+<body class="font-serif text-gray-900 bg-white dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="font-inter font-bold text-2xl text-navy dark:text-white">
+                    HorseWriter
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html#servicios" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Servicios</a>
+                    <a href="index.html#precios" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Precios</a>
+                    <a href="index.html#contacto" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Contacto</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+                        <svg id="sun-icon" class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                        </svg>
+                        <svg id="moon-icon" class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-700">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="index.html#servicios" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Servicios</a>
+                    <a href="index.html#precios" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Precios</a>
+                    <a href="index.html#contacto" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Contacto</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6 bg-gradient-to-br from-sand/20 to-white dark:from-gray-800 dark:to-gray-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-inter font-bold text-4xl md:text-6xl leading-tight mb-6 text-gray-900 dark:text-white">
+                Blog & <span class="text-navy dark:text-blue-400">Artículos</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate dark:text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+                Establece tu liderazgo intelectual con contenido profundo y valioso
+            </p>
+            <div class="w-24 h-px bg-navy dark:bg-blue-400 mx-auto"></div>
+        </div>
+    </section>
+
+    <!-- Service Image -->
+    <section class="py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="rounded-lg overflow-hidden shadow-xl">
+                <img src="images/blog-writing.jpeg" alt="Blog & Articles Writing Service" class="w-full h-64 md:h-96 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="py-16 px-6 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-inter font-bold text-3xl text-gray-900 dark:text-white mb-6">
+                        Contenido que posiciona como el experto de referencia
+                    </h2>
+                    <p class="text-lg text-slate dark:text-gray-300 leading-relaxed mb-6">
+                        Nuestro servicio de Blog & Artículos crea contenido profundo y bien investigado que establece 
+                        tu autoridad en tu campo. Cada artículo está diseñado para educar a tu audiencia, demostrar 
+                        tu expertise y posicionarte como el líder de pensamiento al que acuden por insights valiosos.
+                    </p>
+                    <p class="text-lg text-slate dark:text-gray-300 leading-relaxed">
+                        Combinamos investigación exhaustiva con storytelling convincente para crear contenido que 
+                        no solo informa, sino que inspira y genera engagement genuino con tu audiencia objetivo.
+                    </p>
+                </div>
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <h3 class="font-inter font-bold text-xl text-gray-900 dark:text-white mb-4">
+                        Tipos de contenido
+                    </h3>
+                    <ul class="space-y-3 text-slate dark:text-gray-300">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-navy dark:text-blue-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Artículos de liderazgo intelectual (1500-3000 palabras)
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-navy dark:text-blue-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Posts de blog educativos y tutoriales
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-navy dark:text-blue-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Análisis de tendencias de la industria
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-navy dark:text-blue-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Casos de estudio y análisis profundos
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-navy dark:text-blue-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Artículos de opinión y perspectivas únicas
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-navy dark:text-blue-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Guías completas y recursos prácticos
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Strategy -->
+    <section class="py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-inter font-bold text-3xl text-center text-gray-900 dark:text-white mb-12">
+                Estrategia de Contenido Integral
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white dark:text-gray-900" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">SEO Optimizado</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Contenido optimizado para motores de búsqueda y descubrimiento orgánico.</p>
+                </div>
+                <div class="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white dark:text-gray-900" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Investigación Profunda</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Investigación exhaustiva para contenido fundamentado y creíble.</p>
+                </div>
+                <div class="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white dark:text-gray-900" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Audiencia Específica</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Contenido adaptado a tu audiencia objetivo y sus necesidades.</p>
+                </div>
+                <div class="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white dark:text-gray-900" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Engagement Alto</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Contenido que genera comentarios, shares y conversaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Process -->
+    <section class="py-16 px-6 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-inter font-bold text-3xl text-center text-gray-900 dark:text-white mb-12">
+                Proceso de Creación de Contenido
+            </h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white dark:text-gray-900 font-bold text-xl">1</span>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Investigación</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Investigamos tendencias, competencia y oportunidades de contenido.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white dark:text-gray-900 font-bold text-xl">2</span>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Planificación</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Desarrollamos un calendario editorial estratégico y temas relevantes.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white dark:text-gray-900 font-bold text-xl">3</span>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Creación</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Escribimos contenido de alta calidad con tu voz y perspectiva única.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white dark:text-gray-900 font-bold text-xl">4</span>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Optimización</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm">Optimizamos para SEO, legibilidad y máximo impacto en tu audiencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-6 bg-navy dark:bg-blue-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-inter font-bold text-3xl text-white mb-6">
+                ¿Listo para establecer tu autoridad con contenido de calidad?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                Comienza a construir tu reputación como experto con artículos que realmente aportan valor.
+            </p>
+            <button class="bg-white hover:bg-gray-100 text-navy px-8 py-4 rounded-lg font-inter font-semibold transition-colors duration-200">
+                Solicitar Blog & Articles Writing
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="font-inter font-bold text-2xl mb-4">HorseWriter</div>
+            <p class="text-gray-400 mb-8">Servicios premium de ghostwriting discretos y profesionales.</p>
+            <div class="w-24 h-px bg-gray-700 mx-auto"></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
