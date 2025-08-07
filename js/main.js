@@ -98,12 +98,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Service request button functionality (placeholder)
-    const serviceButtons = document.querySelectorAll('button[class*="Solicitar"]');
+    const serviceButtons = document.querySelectorAll('button');
     serviceButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Placeholder functionality - could integrate with contact form or external service
-            alert('¡Gracias por tu interés! Te contactaremos pronto para discutir tus necesidades de ghostwriting.');
-        });
+        if (button.textContent.includes('Solicitar')) {
+            button.addEventListener('click', function() {
+                // Redirect to contact page instead of showing alert
+                window.location.href = 'contact.html';
+            });
+        }
     });
 
     // Add hover effects to service cards

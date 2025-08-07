@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - HorseWriter</title>
+    <meta name="description" content="Contacta con HorseWriter para servicios premium de ghostwriting. Consulta gratuita y respuesta en 24 horas.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'serif': ['Noto Serif', 'serif'],
+                    },
+                    colors: {
+                        'navy': '#1e3a8a',
+                        'sand': '#f5f5dc',
+                        'charcoal': '#374151',
+                        'slate': '#6b7280',
+                    }
+                }
+            },
+            darkMode: 'class'
+        }
+    </script>
+</head>
+<body class="font-serif text-gray-900 bg-white dark:bg-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="font-inter font-bold text-2xl text-navy dark:text-white">
+                    HorseWriter
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="services.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Servicios</a>
+                    <a href="packages.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Paquetes</a>
+                    <a href="contact.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Contacto</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+                        <svg id="sun-icon" class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                        </svg>
+                        <svg id="moon-icon" class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-700">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="services.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Servicios</a>
+                    <a href="packages.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Paquetes</a>
+                    <a href="contact.html" class="text-gray-700 dark:text-gray-300 hover:text-navy dark:hover:text-white transition-colors duration-200">Contacto</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-6 bg-gradient-to-br from-sand/20 to-white dark:from-gray-800 dark:to-gray-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="font-inter font-bold text-4xl md:text-6xl leading-tight mb-6 text-gray-900 dark:text-white">
+                Hablemos de tu <span class="text-navy dark:text-blue-400">Proyecto</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate dark:text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+                Consulta gratuita y respuesta garantizada en 24 horas
+            </p>
+            <div class="w-24 h-px bg-navy dark:bg-blue-400 mx-auto"></div>
+        </div>
+    </section>
+
+    <!-- Contact Visual -->
+    <section class="py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="rounded-lg overflow-hidden shadow-xl">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Professional consultation workspace" class="w-full h-64 md:h-96 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16 px-6 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="font-inter font-bold text-3xl text-gray-900 dark:text-white mb-6">
+                        Comencemos tu proyecto
+                    </h2>
+                    <p class="text-lg text-slate dark:text-gray-300 leading-relaxed mb-8">
+                        Cuéntanos sobre tu proyecto de ghostwriting. Nuestro equipo revisará tu solicitud 
+                        y te contactará con una propuesta personalizada en menos de 24 horas.
+                    </p>
+                    
+                    <!-- Contact Features -->
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-navy dark:bg-blue-400 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white dark:text-gray-900" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-2">Respuesta Rápida</h3>
+                                <p class="text-slate dark:text-gray-300 text-sm">Te contactamos en menos de 24 horas con una propuesta detallada.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-navy dark:bg-blue-400 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white dark:text-gray-900" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-2">Confidencialidad Total</h3>
+                                <p class="text-slate dark:text-gray-300 text-sm">Tu información y proyecto están completamente protegidos.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-navy dark:bg-blue-400 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white dark:text-gray-900" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-2">Sin Compromiso</h3>
+                                <p class="text-slate dark:text-gray-300 text-sm">Consulta gratuita sin ningún tipo de compromiso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Nombre completo *
+                            </label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-navy dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Email *
+                            </label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-navy dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200">
+                        </div>
+
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Empresa/Organización
+                            </label>
+                            <input type="text" id="company" name="company"
+                                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-navy dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200">
+                        </div>
+
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Servicio de interés *
+                            </label>
+                            <select id="service" name="service" required
+                                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-navy dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="newsletter">Newsletter Ghostwriting</option>
+                                <option value="linkedin">LinkedIn Leadership</option>
+                                <option value="social-media">Social Media Copywriting</option>
+                                <option value="email-copy">Email Copywriting</option>
+                                <option value="website-copy">Website Copywriting</option>
+                                <option value="pitch-speech">Startup Pitch & Corporate Speech</option>
+                                <option value="blog-articles">Blog & Artículos</option>
+                                <option value="long-form">Contenido Long-form</option>
+                                <option value="multiple">Múltiples servicios</option>
+                                <option value="consultation">Consulta general</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="budget" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Presupuesto mensual aproximado
+                            </label>
+                            <select id="budget" name="budget"
+                                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-navy dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200">
+                                <option value="">Selecciona un rango</option>
+                                <option value="300-500">$300 - $500</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2000">$1,000 - $2,000</option>
+                                <option value="2000-3000">$2,000 - $3,000</option>
+                                <option value="3000+">$3,000+</option>
+                                <option value="project-based">Proyecto único</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Cuéntanos sobre tu proyecto *
+                            </label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Describe tu proyecto, objetivos, audiencia objetivo y cualquier detalle relevante..."
+                                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-navy dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200 resize-vertical"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="timeline" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                ¿Cuándo te gustaría comenzar?
+                            </label>
+                            <select id="timeline" name="timeline"
+                                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-navy dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-200">
+                                <option value="">Selecciona un plazo</option>
+                                <option value="immediately">Inmediatamente</option>
+                                <option value="1-2-weeks">En 1-2 semanas</option>
+                                <option value="1-month">En 1 mes</option>
+                                <option value="2-3-months">En 2-3 meses</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-navy hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-inter font-semibold transition-colors duration-200 focus:ring-2 focus:ring-navy dark:focus:ring-blue-400 focus:ring-offset-2">
+                            Enviar Solicitud
+                        </button>
+
+                        <p class="text-xs text-slate dark:text-gray-400 text-center">
+                            Al enviar este formulario, aceptas que procesemos tu información para contactarte sobre nuestros servicios.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Contact Methods -->
+    <section class="py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-inter font-bold text-3xl text-center text-gray-900 dark:text-white mb-12">
+                Otras Formas de Contacto
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white dark:text-gray-900" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Email Directo</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm mb-4">Para consultas específicas o proyectos urgentes</p>
+                    <a href="mailto:hello@horsewriter.com" class="text-navy dark:text-blue-400 hover:underline font-medium">
+                        hello@horsewriter.com
+                    </a>
+                </div>
+                
+                <div class="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white dark:text-gray-900" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">Llamada Programada</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm mb-4">Agenda una consulta telefónica gratuita</p>
+                    <button class="text-navy dark:text-blue-400 hover:underline font-medium">
+                        Programar Llamada
+                    </button>
+                </div>
+                
+                <div class="text-center p-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-navy dark:bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white dark:text-gray-900" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">FAQ</h3>
+                    <p class="text-slate dark:text-gray-300 text-sm mb-4">Encuentra respuestas a preguntas frecuentes</p>
+                    <a href="#faq" class="text-navy dark:text-blue-400 hover:underline font-medium">
+                        Ver Preguntas Frecuentes
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 px-6 bg-gray-50 dark:bg-gray-800">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-inter font-bold text-3xl text-center text-gray-900 dark:text-white mb-12">
+                Preguntas Frecuentes
+            </h2>
+            <div class="space-y-6">
+                <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">
+                        ¿Cuánto tiempo toma recibir una respuesta?
+                    </h3>
+                    <p class="text-slate dark:text-gray-300">
+                        Garantizamos una respuesta en menos de 24 horas. Para proyectos urgentes, 
+                        a menudo respondemos en pocas horas.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">
+                        ¿Ofrecen consultas gratuitas?
+                    </h3>
+                    <p class="text-slate dark:text-gray-300">
+                        Sí, todas las consultas iniciales son completamente gratuitas y sin compromiso. 
+                        Evaluamos tu proyecto y te proporcionamos una propuesta detallada.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">
+                        ¿Cómo garantizan la confidencialidad?
+                    </h3>
+                    <p class="text-slate dark:text-gray-300">
+                        Todos nuestros proyectos están protegidos por acuerdos de confidencialidad estrictos. 
+                        Tu información y contenido están completamente seguros.
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <h3 class="font-inter font-semibold text-lg text-gray-900 dark:text-white mb-3">
+                        ¿Pueden trabajar con presupuestos específicos?
+                    </h3>
+                    <p class="text-slate dark:text-gray-300">
+                        Absolutamente. Adaptamos nuestros servicios a diferentes presupuestos y 
+                        necesidades. Contáctanos para discutir opciones personalizadas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="font-inter font-bold text-2xl mb-4">HorseWriter</div>
+            <p class="text-gray-400 mb-8">Servicios premium de ghostwriting discretos y profesionales.</p>
+            <div class="w-24 h-px bg-gray-700 mx-auto"></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
